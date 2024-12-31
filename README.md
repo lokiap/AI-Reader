@@ -10,6 +10,7 @@
 python -m venv ./
 ```
 2. Active the venv :
+
 **For windows**
 ```bash
 Scripts\Activate.ps1
