@@ -7,16 +7,26 @@
 
 1. Make a python virtual environment :
 
+2. Active the venv :
+**For windows**
+```bash
+Scripts\Activate.ps1
+```
+**Linux and MacOS**
+```bash
+source bin/activate
+```
+
 ```bash
 python -m venv ./
 ```
-2. OpenCV :
+3. OpenCV :
 
 ```bash 
 pip install opencv2-python
 ```
 
-3. TensorFlow :
+4. TensorFlow :
 
 ```bash
 pip install TensorFlow
