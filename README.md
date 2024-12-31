@@ -23,7 +23,7 @@ source bin/activate
 3. OpenCV :
 
 ```bash 
-pip install opencv2-python
+pip install opencv-python
 ```
 
 4. TensorFlow :
