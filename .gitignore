@@ -2,6 +2,7 @@
 
 # Ignore tout les fichiers de la machine virtuel python
 bin/
+__pycache__/
 lib/
 lib64/
 pyvenv.cfg
