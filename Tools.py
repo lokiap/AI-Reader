@@ -26,6 +26,18 @@ def Gaussian_Threshold(image):
     return binary_image
 
 
+def Mean_Threshold(image):
+    binary_image = cv2.adaptiveThreshold(
+        image, 255, cv2.ADAPTIVE_THRESH_MEAN_C, cv2.THRESH_BINARY_INV, 11, 2
+    )
+    return binary_image
+
+
+def Threshold(image):
+    binary_image = cv2.threshold(image, 125, 255, cv2.THRESH_BINARY_INV)
+    return binary_image
+
+
 # Détection des composantes connexes
 def Components_detection(image, binary_image):
     num_labels, labels, stats, centroids = cv2.connectedComponentsWithStats(
