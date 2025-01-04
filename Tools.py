@@ -1,4 +1,5 @@
 import cv2
+import numpy as np
 
 
 # Choix de l'image
@@ -46,15 +47,17 @@ def Components_detection(image, binary_image):
 
     # Charger l'image en couleur pour affichage des encadrements
     color_image = cv2.cvtColor(image, cv2.COLOR_GRAY2BGR)
-
+    components = []
     # Parcours des objets détectés pour les encadrer
     for i in range(1, num_labels):  # On ignore le fond même s'il est blanc (le 0)
         x, y, w, h, area = stats[i]
+        roi = image[y : y + h, x : x + w]
         if area > 50:  # Filtrer SEULEMENT les petits objets
+            components.append((roi, (x, y, w, h)))
             cv2.rectangle(
                 color_image, (x, y), (x + w, y + h), (0, 0, 255), 2
             )  # Ca encadre en rouge
-    return color_image
+    return color_image, components
 
 
 # Fonction pour ajuster l'image à la fenêtre tout en conservant les proportions
