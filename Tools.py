@@ -40,7 +40,7 @@ def Threshold(image):
 
 
 # Détection des composantes connexes
-def Components_detection(image, binary_image):
+def Components_detection(image, binary_image, nom):
     num_labels, labels, stats, centroids = cv2.connectedComponentsWithStats(
         binary_image
     )
@@ -51,12 +51,24 @@ def Components_detection(image, binary_image):
     # Parcours des objets détectés pour les encadrer
     for i in range(1, num_labels):  # On ignore le fond même s'il est blanc (le 0)
         x, y, w, h, area = stats[i]
+        print(nom)
+        if nom.split("/", 2)[2] == "page":
+            h = 30
         roi = image[y : y + h, x : x + w]
-        if area > 50:  # Filtrer SEULEMENT les petits objets
+        if area > 50:  # Filtres
             components.append((roi, (x, y, w, h)))
             cv2.rectangle(
                 color_image, (x, y), (x + w, y + h), (0, 0, 255), 2
             )  # Ca encadre en rouge
+            cv2.putText(
+                color_image,
+                f"{len(components)-2}",
+                (x, y - h),
+                cv2.FONT_HERSHEY_SIMPLEX,
+                1,
+                (255, 0, 0),
+            )
+    print(f"Nombre de composants : {len(components) - 2}")
     return color_image, components
 
 
