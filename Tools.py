@@ -39,37 +39,86 @@ def Threshold(image):
     return binary_image
 
 
-# Détection des composantes connexes
-def Components_detection(image, binary_image, nom):
+def Components_detection(image, binary_image, nom, y_tolerance=15):
     num_labels, labels, stats, centroids = cv2.connectedComponentsWithStats(
         binary_image
     )
 
-    # Charger l'image en couleur pour affichage des encadrements
+    # Charger l'image en couleur pour affichage
     color_image = cv2.cvtColor(image, cv2.COLOR_GRAY2BGR)
     components = []
-    # Parcours des objets détectés pour les encadrer
-    for i in range(1, num_labels):  # On ignore le fond même s'il est blanc (le 0)
+
+    # Taille de l'image pour éviter les composantes trop grandes (dans plan)
+    img_h, img_w = image.shape
+
+    # Collecter les composantes valides
+    for i in range(1, num_labels):  # Ignorer le fond (0)
         x, y, w, h, area = stats[i]
-        print(nom)
-        if nom.split("/", 2)[2] == "page":
-            h = 30
-        roi = image[y : y + h, x : x + w]
-        if area > 50:  # Filtres
+
+        # Éviter les zones trop petites ou trop grandes
+        if 50 < area < (0.5 * img_h * img_w) and w > 0 and h > 0:
+            # Copie pour éviter les conflits
+            roi = image[y : y + h, x : x + w].copy()
             components.append((roi, (x, y, w, h)))
-            cv2.rectangle(
-                color_image, (x, y), (x + w, y + h), (0, 0, 255), 2
-            )  # Ca encadre en rouge
+
+    # Vérification avant de trier
+    if not components:
+        print("Aucune composante valide trouvée !")
+        return color_image, []
+
+    # Trier les composantes avec tolérance pour y (une fourchette y)
+    sorted_components = []
+    while components:
+        base_component = components.pop(0)  # Récupérer et supprimer le premier élément
+        line = [base_component]
+
+        remaining_components = []  # Nouvelle liste pour les composants restants
+
+        for component in components:
+            # Vérifier que les dimensions sont cohérentes avant comparaison
+            if len(component) != 2 or len(base_component) != 2:
+                print(
+                    f"Composante incorrecte ignorée : {(component[1][0],components[1][1])}"
+                )
+                continue
+
+            # Comparer les positions en y pour regrouper sur une ligne
+            if abs(component[1][1] - base_component[1][1]) <= y_tolerance:
+                line.append(component)
+            else:
+                remaining_components.append(component)  # Garde les composants non liés
+
+        # Mettre à jour les composants
+        components = remaining_components
+
+        # Trier les composants de la ligne horizontalement (par x)
+        line.sort(key=lambda c: c[1][0])
+        sorted_components.extend(line)
+
+    # Dessiner les rectangles et afficher les numéros
+    for idx, (roi, (x, y, w, h)) in enumerate(sorted_components):
+        cv2.rectangle(
+            color_image, (x, y), (x + w, y + h), (0, 0, 255), 2
+        )  # Rectangle rouge
+        if idx % 5 == 0:
+            # Placer le texte à une hauteur constante (au-dessus de la composante)
             cv2.putText(
                 color_image,
-                f"{len(components)-2}",
-                (x, y - h),
+                f"{idx}",  # Numéro de composante
+                (x, max(0, y - 10)),  # Fixer la hauteur à 10 pixels au-dessus
                 cv2.FONT_HERSHEY_SIMPLEX,
-                1,
-                (255, 0, 0),
+                0.7,  # Taille du texte réduite
+                (255, 0, 0),  # Couleur bleue
+                2,
             )
-    print(f"Nombre de composants : {len(components) - 2}")
-    return color_image, components
+
+    print(f"Nombre de composantes : {len(sorted_components)}")
+    return color_image, sorted_components
+
+
+# Retourne une composante précise
+def get_Components(components, idx):
+    return components[idx]
 
 
 # Fonction pour ajuster l'image à la fenêtre tout en conservant les proportions
