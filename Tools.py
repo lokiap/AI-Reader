@@ -51,7 +51,7 @@ def Components_detection(image, binary_image, nom):
     # Parcours des objets détectés pour les encadrer
     for i in range(1, num_labels):  # On ignore le fond même s'il est blanc (le 0)
         x, y, w, h, area = stats[i]
-        print(nom)
+        #print(nom)
         if nom.split("/", 2)[2] == "page":
             h = 30
         roi = image[y : y + h, x : x + w]
