@@ -1,5 +1,5 @@
 import tensorflow as tf
-from tensorflow.keras import layers, models
+from tensorflow.keras import layers, models # type: ignore
 
 def create_model():
     """Crée un modèle CNN pour classifier les lettres."""

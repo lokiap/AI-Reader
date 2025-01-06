@@ -7,11 +7,21 @@ binary_image = Gaussian_Threshold(image)  # Convertit en binaire avec le seuilla
 
 # Étape 2 : Extraction des composants connectés
 color_image, components = Components_detection(image, binary_image, nom)
-
+'''
 # Étape 3 : Affichage des résultats
 print(f"Nombre de composants détectés : {len(components)}")
 for i, (roi, (x, y, w, h)) in enumerate(components):
     print(f"Composant {i + 1}: Coordonnées (x={x}, y={y}, w={w}, h={h})")
-
+'''
+print(f"Nombre de composants détectés : {len(components)}")
+for i, comp in enumerate(components):
+    print(f"Composant {i + 1}: Structure = {type(comp)}, Contenu = {comp}")
+'''
+for i in range(10):
+    roi, (x, y, w, h) = components[i]
+    cv2.imshow("CC", roi)
+    cv2.waitKey(0)
+    cv2.destroyAllWindows()
 # Affichage de l'image avec les cadres
 Display(color_image, nom)
+'''
