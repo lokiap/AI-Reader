@@ -121,6 +121,26 @@ def get_Components(components, idx):
     return components[idx]
 
 
+def display_components(component, nom):
+    for i in range(len(component)):
+        roi, (x, y, w, h) = component[i]
+        # y = int(roi.shape[:2][0] + 10)
+        # x = int(roi.shape[:2][1] / 2)
+        # cv2.putText(
+        #     roi,
+        #     f"{nom[i]}",  # N
+        #     (x, y),  # Fixer la hauteur à 10 pixels au-dessus
+        #     cv2.FONT_HERSHEY_SIMPLEX,
+        #     0.7,  # Taille du texte réduite
+        #     (255, 0, 0),  # Couleur bleue
+        #     2,
+        # )
+        cv2.imshow("CC", roi)
+        # cv2.imshow(f"n°{i} : {nom[i]}", roi)
+        cv2.waitKey(0)
+        # cv2.destroyWindow(f"n°{i} : {nom[i]}")
+
+
 # Fonction pour ajuster l'image à la fenêtre tout en conservant les proportions
 def resize_with_aspect_ratio(image, width=None, height=None, inter=cv2.INTER_AREA):
     (h, w) = image.shape[:2]
@@ -146,5 +166,10 @@ def Display(color_image, nom):
     # Affichage de l'image encadrée
     cv2.imshow("Resultat", resized_image)
     cv2.waitKey(0)
-    cv2.imwrite(f'Resultats/{nom.split('/',2)[2]}', color_image)
+    # Séparer l'expression dans une variable pour éviter l'erreur de parenthèses
+    split_name = nom.split("/", 2)
+    if len(split_name) > 2:
+        cv2.imwrite(f"Resultats/{split_name[2]}", color_image)
+    else:
+        print(f"Erreur : la variable 'nom' ne contient pas assez de séparateurs '/'")
     cv2.destroyAllWindows()

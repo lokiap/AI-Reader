@@ -1,6 +1,7 @@
 import numpy as np
 import tensorflow as tf
 import Extract as ext
+import Analyse
 import Tools
 
 
@@ -13,7 +14,10 @@ def train_naive_bayes(X, y):
     classes = tf.unique(y).y
 
     # Calcul des priors (P(C))
-    priors = {cls: tf.reduce_mean(tf.cast(y == cls, tf.float32)) for cls in classes}
+    priors = {
+        int(cls.numpy()): tf.reduce_mean(tf.cast(y == cls, tf.float64))
+        for cls in classes
+    }
 
     # Moyennes et variances
     means = {}
@@ -24,16 +28,17 @@ def train_naive_bayes(X, y):
     global_variance = tf.maximum(global_variance, 1e-6)  # Minimum global fixé
 
     for cls in classes:
-        subset = X[tf.where(y == cls)[:, 0]]
+        # Applatir les indices
+        subset_indices = tf.squeeze(
+            tf.where(y == cls)
+        )  # Applatir pour obtenir un vecteur d'indices
+        subset = tf.gather(X, subset_indices, axis=0)  # Sélectionner les lignes de X
 
         # Moyennes calculées directement
-        means[cls] = tf.reduce_mean(subset, axis=0)
+        means[int(cls.numpy())] = tf.reduce_mean(subset, axis=0)
 
         # Utilisation de la variance globale minimale
-        variances[cls] = global_variance
-        print(f"Classe {cls} :")
-        print(f"  Moyenne : {means[cls]}")
-        print(f"  Variance (globale) : {variances[cls]}")  # Debugging
+        variances[int(cls.numpy())] = global_variance
 
     return priors, means, variances
 
@@ -50,20 +55,21 @@ def predict_naive_bayes(X, priors, means, variances):
         class_probabilities = {}
 
         for cls in classes:
+            # S'assurer que les variances et priors sont au format float32
+            variance = tf.cast(variances[cls], tf.float64)
+            prior = tf.cast(priors[cls], tf.float64)
+
             # Calcul de la probabilité logarithmique P(x|C)
             log_prob = tf.reduce_sum(
-                -0.5 * tf.log(2 * np.pi * variances[cls])
-                - ((x - means[cls]) ** 2) / (2 * variances[cls])
-            ) + tf.log(priors[cls])
+                -0.5 * tf.math.log(2 * np.pi * variance)
+                - ((x - means[cls]) ** 2) / (2 * variance)
+            ) + tf.math.log(prior)
             class_probabilities[cls] = log_prob
 
-        # Debug : Affichage des log-probabilités avant normalisation
-        print("Log-probabilités avant normalisation :")
-        for cls, log_prob in class_probabilities.items():
-            print(f"Classe: {cls}, Log-probabilité: {log_prob}")
+        # Extraire les log-probabilités et les transformer en tensor
+        log_probs = tf.stack(list(class_probabilities.values()))
 
         # Normalisation des log-probabilités
-        log_probs = tf.stack(list(class_probabilities.values()))
         log_probs -= tf.reduce_max(log_probs)  # Pour stabilité numérique
         probs = tf.exp(log_probs)  # Convertir les log-probabilités en probabilités
         probs /= tf.reduce_sum(
@@ -71,9 +77,14 @@ def predict_naive_bayes(X, priors, means, variances):
         )  # Normaliser pour que la somme des probabilités soit 1
 
         # Classe avec la probabilité maximale
-        best_class = tf.argmax(class_probabilities, axis=0)
+        best_class_idx = tf.argmax(
+            probs
+        )  # On utilise ici `probs` pour trouver l'indice
+        best_class = classes[
+            best_class_idx.numpy()
+        ]  # Récupérer la classe correspondant à l'indice
         predictions.append(best_class)
-        probabilities.append(probs[best_class])
+        probabilities.append(probs[best_class_idx])
 
     return predictions, probabilities
 
@@ -114,25 +125,25 @@ def pipeline(rois, reference_directory):
     )
 
     # 6. Décodage des labels prédits
-    decoded_labels = [label_decoder[label.numpy()] for label in predicted_labels]
+    decoded_labels = [
+        label_decoder[label] for label in predicted_labels
+    ]  # Pas besoin de .numpy()
 
+    valuable_rois = []
+    rois_labels = []
     # 7. Affichage des résultats
     print("Résultats des prédictions :")
-    for i, (roi, prob) in enumerate(zip(decoded_labels, probabilities)):
-        print(f"Composant {i}: {roi} (Précision estimée : {prob:.2%})")
+    for i, (label, prob) in enumerate(zip(decoded_labels, probabilities)):
+        if prob < 0.7:
+            continue
+        print(f"Composant {i}: {label} (Précision estimée : {prob:.2%})")
+        valuable_rois.append(rois[i])
+        rois_labels.append(label)
+    return valuable_rois, rois_labels
 
 
 if __name__ == "__main__":
-    image, nom = Tools.Choix()
-    input = input("1 - Threshold \n2 - Gaussian \n3 - Mean_Threshold\n")
-    binary_image = ""
-    if input == "1":
-        binary_image = Tools.Threshold(image)
-    elif input == "2":
-        binary_image = Tools.Gaussian_Threshold(image)
-    elif input == "3":
-        binary_image = Tools.Mean_Threshold(image)
-    _, rois = Tools.Components_detection(image, binary_image, nom)
+    nom, rois = Analyse.start()
     reference_directory = ""
     if nom.find("page") == -1:
         reference_directory = "data/plan/catalogue"
