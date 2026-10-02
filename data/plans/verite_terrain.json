@@ -1,0 +1,1667 @@
+[
+ {
+  "label": "luminaire_01",
+  "x": 5785,
+  "y": 1485,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 5962,
+  "y": 1485,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 6139,
+  "y": 1485,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 6316,
+  "y": 1485,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 6494,
+  "y": 1485,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 6671,
+  "y": 1485,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 6848,
+  "y": 1485,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 10650,
+  "y": 1639,
+  "w": 14,
+  "h": 145,
+  "score": 1.0,
+  "angle": 270
+ },
+ {
+  "label": "luminaire_01",
+  "x": 11053,
+  "y": 1639,
+  "w": 14,
+  "h": 145,
+  "score": 1.0,
+  "angle": 270
+ },
+ {
+  "label": "luminaire_07",
+  "x": 1378,
+  "y": 1718,
+  "w": 69,
+  "h": 70,
+  "score": 1.0,
+  "angle": 0
+ },
+ {
+  "label": "luminaire_01",
+  "x": 8337,
+  "y": 1727,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 8056,
+  "y": 1730,
+  "w": 14,
+  "h": 145,
+  "score": 1.0,
+  "angle": 270
+ },
+ {
+  "label": "luminaire_01",
+  "x": 10369,
+  "y": 1798,
+  "w": 14,
+  "h": 145,
+  "score": 1.0,
+  "angle": 270
+ },
+ {
+  "label": "luminaire_01",
+  "x": 10650,
+  "y": 1811,
+  "w": 14,
+  "h": 145,
+  "score": 1.0,
+  "angle": 270
+ },
+ {
+  "label": "luminaire_01",
+  "x": 11053,
+  "y": 1811,
+  "w": 14,
+  "h": 145,
+  "score": 1.0,
+  "angle": 270
+ },
+ {
+  "label": "luminaire_01",
+  "x": 7442,
+  "y": 1815,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 7623,
+  "y": 1815,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 7803,
+  "y": 1815,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 5785,
+  "y": 1881,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 5962,
+  "y": 1881,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 6139,
+  "y": 1881,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 6316,
+  "y": 1881,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 6494,
+  "y": 1881,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 6671,
+  "y": 1881,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 6848,
+  "y": 1881,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 8337,
+  "y": 1946,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 10650,
+  "y": 1984,
+  "w": 14,
+  "h": 145,
+  "score": 1.0,
+  "angle": 270
+ },
+ {
+  "label": "luminaire_01",
+  "x": 11053,
+  "y": 1984,
+  "w": 14,
+  "h": 145,
+  "score": 1.0,
+  "angle": 270
+ },
+ {
+  "label": "luminaire_01",
+  "x": 6042,
+  "y": 2101,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 7442,
+  "y": 2147,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 7623,
+  "y": 2147,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 7803,
+  "y": 2147,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 7983,
+  "y": 2147,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 10369,
+  "y": 2152,
+  "w": 14,
+  "h": 145,
+  "score": 1.0,
+  "angle": 270
+ },
+ {
+  "label": "luminaire_01",
+  "x": 10650,
+  "y": 2157,
+  "w": 14,
+  "h": 145,
+  "score": 1.0,
+  "angle": 270
+ },
+ {
+  "label": "luminaire_01",
+  "x": 11053,
+  "y": 2157,
+  "w": 14,
+  "h": 145,
+  "score": 1.0,
+  "angle": 270
+ },
+ {
+  "label": "luminaire_01",
+  "x": 8337,
+  "y": 2165,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 5925,
+  "y": 2246,
+  "w": 14,
+  "h": 145,
+  "score": 1.0,
+  "angle": 270
+ },
+ {
+  "label": "luminaire_01",
+  "x": 6316,
+  "y": 2277,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 6494,
+  "y": 2277,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 6671,
+  "y": 2277,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 6848,
+  "y": 2277,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 6213,
+  "y": 2309,
+  "w": 14,
+  "h": 145,
+  "score": 1.0,
+  "angle": 90
+ },
+ {
+  "label": "luminaire_01",
+  "x": 10650,
+  "y": 2329,
+  "w": 14,
+  "h": 145,
+  "score": 1.0,
+  "angle": 270
+ },
+ {
+  "label": "luminaire_01",
+  "x": 11053,
+  "y": 2329,
+  "w": 14,
+  "h": 145,
+  "score": 1.0,
+  "angle": 270
+ },
+ {
+  "label": "luminaire_01",
+  "x": 7439,
+  "y": 2376,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 7793,
+  "y": 2376,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 8148,
+  "y": 2376,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 8502,
+  "y": 2376,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 10650,
+  "y": 2502,
+  "w": 14,
+  "h": 145,
+  "score": 1.0,
+  "angle": 270
+ },
+ {
+  "label": "luminaire_01",
+  "x": 11053,
+  "y": 2502,
+  "w": 14,
+  "h": 145,
+  "score": 1.0,
+  "angle": 270
+ },
+ {
+  "label": "luminaire_01",
+  "x": 10369,
+  "y": 2506,
+  "w": 14,
+  "h": 145,
+  "score": 1.0,
+  "angle": 270
+ },
+ {
+  "label": "luminaire_11",
+  "x": 8268,
+  "y": 2541,
+  "w": 74,
+  "h": 75,
+  "score": 1.0,
+  "angle": 0
+ },
+ {
+  "label": "luminaire_11",
+  "x": 8480,
+  "y": 2541,
+  "w": 74,
+  "h": 75,
+  "score": 1.0,
+  "angle": 0
+ },
+ {
+  "label": "luminaire_01",
+  "x": 7210,
+  "y": 2569,
+  "w": 14,
+  "h": 145,
+  "score": 1.0,
+  "angle": 270
+ },
+ {
+  "label": "luminaire_01",
+  "x": 7532,
+  "y": 2593,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 7893,
+  "y": 2593,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 6302,
+  "y": 2634,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 6681,
+  "y": 2635,
+  "w": 143,
+  "h": 12,
+  "score": 1.0,
+  "angle": 0
+ },
+ {
+  "label": "luminaire_01",
+  "x": 10650,
+  "y": 2675,
+  "w": 14,
+  "h": 145,
+  "score": 1.0,
+  "angle": 270
+ },
+ {
+  "label": "luminaire_03",
+  "x": 6912,
+  "y": 2820,
+  "w": 51,
+  "h": 51,
+  "score": 1.0,
+  "angle": 270
+ },
+ {
+  "label": "luminaire_11",
+  "x": 8268,
+  "y": 2824,
+  "w": 74,
+  "h": 75,
+  "score": 1.0,
+  "angle": 0
+ },
+ {
+  "label": "luminaire_11",
+  "x": 8480,
+  "y": 2824,
+  "w": 74,
+  "h": 75,
+  "score": 1.0,
+  "angle": 0
+ },
+ {
+  "label": "luminaire_01",
+  "x": 7532,
+  "y": 2825,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 10651,
+  "y": 2848,
+  "w": 12,
+  "h": 143,
+  "score": 1.0,
+  "angle": 0
+ },
+ {
+  "label": "luminaire_01",
+  "x": 7210,
+  "y": 2860,
+  "w": 14,
+  "h": 145,
+  "score": 1.0,
+  "angle": 270
+ },
+ {
+  "label": "luminaire_01",
+  "x": 10369,
+  "y": 2861,
+  "w": 14,
+  "h": 145,
+  "score": 1.0,
+  "angle": 270
+ },
+ {
+  "label": "luminaire_01",
+  "x": 5451,
+  "y": 2986,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 5634,
+  "y": 2986,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 5817,
+  "y": 2986,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 10120,
+  "y": 2989,
+  "w": 13,
+  "h": 143,
+  "score": 1.0,
+  "angle": 0
+ },
+ {
+  "label": "luminaire_01",
+  "x": 10650,
+  "y": 3020,
+  "w": 14,
+  "h": 145,
+  "score": 1.0,
+  "angle": 270
+ },
+ {
+  "label": "luminaire_01",
+  "x": 7893,
+  "y": 3056,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 6006,
+  "y": 3080,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 6205,
+  "y": 3080,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 9059,
+  "y": 3083,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_11",
+  "x": 8268,
+  "y": 3108,
+  "w": 74,
+  "h": 75,
+  "score": 1.0,
+  "angle": 0
+ },
+ {
+  "label": "luminaire_11",
+  "x": 8480,
+  "y": 3108,
+  "w": 74,
+  "h": 75,
+  "score": 1.0,
+  "angle": 0
+ },
+ {
+  "label": "luminaire_01",
+  "x": 7210,
+  "y": 3152,
+  "w": 14,
+  "h": 145,
+  "score": 1.0,
+  "angle": 270
+ },
+ {
+  "label": "luminaire_01",
+  "x": 5052,
+  "y": 3327,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 5395,
+  "y": 3327,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 5737,
+  "y": 3327,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 6080,
+  "y": 3327,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 6423,
+  "y": 3327,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 6765,
+  "y": 3327,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 8953,
+  "y": 3342,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 9330,
+  "y": 3342,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 9708,
+  "y": 3342,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 7483,
+  "y": 3343,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 7861,
+  "y": 3343,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 8239,
+  "y": 3343,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 8616,
+  "y": 3343,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 10463,
+  "y": 3343,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 10841,
+  "y": 3343,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 11219,
+  "y": 3343,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 11596,
+  "y": 3343,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 7210,
+  "y": 3443,
+  "w": 14,
+  "h": 145,
+  "score": 1.0,
+  "angle": 270
+ },
+ {
+  "label": "luminaire_01",
+  "x": 9850,
+  "y": 3594,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 10206,
+  "y": 3594,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 10563,
+  "y": 3594,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 10919,
+  "y": 3594,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 11275,
+  "y": 3594,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 9589,
+  "y": 3624,
+  "w": 14,
+  "h": 145,
+  "score": 1.0,
+  "angle": 90
+ },
+ {
+  "label": "luminaire_01",
+  "x": 7492,
+  "y": 3635,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 7771,
+  "y": 3635,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 8051,
+  "y": 3635,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 8330,
+  "y": 3635,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 8610,
+  "y": 3635,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 8889,
+  "y": 3635,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 4975,
+  "y": 3669,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 5161,
+  "y": 3669,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 5348,
+  "y": 3669,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 5535,
+  "y": 3669,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 5722,
+  "y": 3669,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 5909,
+  "y": 3669,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 6096,
+  "y": 3669,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 6282,
+  "y": 3669,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 6469,
+  "y": 3669,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 6656,
+  "y": 3669,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 6843,
+  "y": 3669,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 7210,
+  "y": 3734,
+  "w": 14,
+  "h": 145,
+  "score": 1.0,
+  "angle": 270
+ },
+ {
+  "label": "luminaire_01",
+  "x": 9764,
+  "y": 3882,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 9948,
+  "y": 3882,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 10132,
+  "y": 3882,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 10316,
+  "y": 3882,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 10500,
+  "y": 3882,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 10684,
+  "y": 3882,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 10868,
+  "y": 3882,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 11052,
+  "y": 3882,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 11236,
+  "y": 3882,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 7492,
+  "y": 3994,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 7771,
+  "y": 3994,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 8051,
+  "y": 3994,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 8610,
+  "y": 3994,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 8889,
+  "y": 3994,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 9115,
+  "y": 3994,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 7210,
+  "y": 4027,
+  "w": 13,
+  "h": 143,
+  "score": 1.0,
+  "angle": 0
+ },
+ {
+  "label": "luminaire_01",
+  "x": 9402,
+  "y": 4158,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 0
+ },
+ {
+  "label": "luminaire_01",
+  "x": 4975,
+  "y": 4180,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 5161,
+  "y": 4180,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 5348,
+  "y": 4180,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 5535,
+  "y": 4180,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 5722,
+  "y": 4180,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 5909,
+  "y": 4180,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 6096,
+  "y": 4180,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 6282,
+  "y": 4180,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 6469,
+  "y": 4180,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 6656,
+  "y": 4180,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 6843,
+  "y": 4180,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 11604,
+  "y": 4284,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 9764,
+  "y": 4286,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 9948,
+  "y": 4286,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 10132,
+  "y": 4286,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 10316,
+  "y": 4286,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 10500,
+  "y": 4286,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 10684,
+  "y": 4286,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 10868,
+  "y": 4286,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 11052,
+  "y": 4286,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 11236,
+  "y": 4286,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 11420,
+  "y": 4286,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 7492,
+  "y": 4353,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 7771,
+  "y": 4353,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 8051,
+  "y": 4353,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 8330,
+  "y": 4353,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 8610,
+  "y": 4353,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 8889,
+  "y": 4353,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 9115,
+  "y": 4353,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 9764,
+  "y": 4690,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 9948,
+  "y": 4690,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 10132,
+  "y": 4690,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 10316,
+  "y": 4690,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 10684,
+  "y": 4690,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 10868,
+  "y": 4690,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 11052,
+  "y": 4690,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 11236,
+  "y": 4690,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 11420,
+  "y": 4690,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 11604,
+  "y": 4690,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 7492,
+  "y": 4712,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 7771,
+  "y": 4712,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 8051,
+  "y": 4712,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 8330,
+  "y": 4712,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 8610,
+  "y": 4712,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 8889,
+  "y": 4712,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 9169,
+  "y": 4712,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ },
+ {
+  "label": "luminaire_01",
+  "x": 9448,
+  "y": 4712,
+  "w": 145,
+  "h": 14,
+  "score": 1.0,
+  "angle": 180
+ }
+]

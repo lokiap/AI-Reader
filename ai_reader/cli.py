@@ -10,6 +10,8 @@ import cv2
 from . import evaluation, imaging, recognition, segmentation
 
 DATA = Path("data")
+MODEL = Path("models") / "plan_cnn.pt"
+TRUTH = DATA / "plans" / "verite_terrain.json"
 SOURCES = {
     "plan": (DATA / "plans" / "plan.png", DATA / "plans" / "catalogue"),
     "page": (DATA / "caracteres" / "page.png", DATA / "caracteres" / "catalogue"),
@@ -33,10 +35,16 @@ def cmd_segment(args):
 
 
 def cmd_detect(args):
+    if args.method == "cnn" and args.source != "plan":
+        sys.exit("--method cnn n'existe que pour le plan")
     image_path, catalogue = SOURCES[args.source]
     image_path = args.image or image_path
     catalogue = args.catalogue or catalogue
-    if args.source == "plan":
+    if args.source == "plan" and args.method == "cnn":
+        from . import cnn  # PyTorch n'est nécessaire que pour cette méthode
+
+        detections = cnn.detect_plan_cnn(image_path, args.model, threshold=args.threshold or 0.5)
+    elif args.source == "plan":
         detections = recognition.detect_plan(image_path, catalogue, default_threshold=args.threshold or recognition.PLAN_DEFAULT_THRESHOLD)
     else:
         detections = recognition.detect_page(image_path, catalogue, threshold=args.threshold or recognition.PAGE_DEFAULT_THRESHOLD)
@@ -46,14 +54,28 @@ def cmd_detect(args):
     print(f"{len(detections)} détections : " + ", ".join(f"{k}={v}" for k, v in sorted(counts.items())))
     out = Path(args.output)
     out.mkdir(parents=True, exist_ok=True)
-    (out / f"{args.source}_detections.json").write_text(
+    suffix = "_cnn" if args.method == "cnn" else ""
+    (out / f"{args.source}{suffix}_detections.json").write_text(
         json.dumps([d.to_dict() for d in detections], indent=1), encoding="utf-8")
-    _save(out / f"{args.source}_detections.png", recognition.draw_detections(imaging.load_bgr(image_path), detections))
+    _save(out / f"{args.source}{suffix}_detections.png", recognition.draw_detections(imaging.load_bgr(image_path), detections))
+
+
+def cmd_train(args):
+    from . import cnn
+
+    known = evaluation.load_detections(args.truth)
+    image_path, catalogue = SOURCES["plan"]
+    cnn.train(catalogue, image_path, known, args.output, epochs=args.epochs, n_per_class=args.samples)
+    print(f"Modèle écrit : {args.output}")
 
 
 def cmd_evaluate(args):
-    report = evaluation.evaluate(evaluation.load_detections(args.predictions), evaluation.load_detections(args.truth))
-    print(evaluation.format_report(report))
+    predicted = evaluation.load_detections(args.predictions)
+    truth = evaluation.load_detections(args.truth)
+    if args.x_min is not None:  # ne comparer que la zone x >= x_min (ex. la moitié droite du plan)
+        predicted = [d for d in predicted if d.x >= args.x_min]
+        truth = [d for d in truth if d.x >= args.x_min]
+    print(evaluation.format_report(evaluation.evaluate(predicted, truth)))
 
 
 def build_parser():
@@ -74,11 +96,21 @@ def build_parser():
     det.add_argument("--catalogue")
     det.add_argument("--threshold", type=float, help="seuil de corrélation (défaut : propre à chaque source)")
     det.add_argument("--output", default="resultats")
+    det.add_argument("--method", choices=["template", "cnn"], default="template", help="méthode pour le plan (défaut : template)")
+    det.add_argument("--model", default=str(MODEL), help="poids du CNN (--method cnn)")
     det.set_defaults(func=cmd_detect)
+
+    tr = sub.add_parser("train", help="entraîne le CNN de classification des luminaires du plan")
+    tr.add_argument("--truth", default=str(TRUTH), help="luminaires connus, exclus des négatifs")
+    tr.add_argument("--output", default=str(MODEL))
+    tr.add_argument("--epochs", type=int, default=25)
+    tr.add_argument("--samples", type=int, default=800, help="vignettes générées par classe")
+    tr.set_defaults(func=cmd_train)
 
     ev = sub.add_parser("evaluate", help="précision / rappel par rapport à une vérité terrain")
     ev.add_argument("predictions")
     ev.add_argument("truth")
+    ev.add_argument("--x-min", type=int, help="n'évalue que les objets dont x >= x-min")
     ev.set_defaults(func=cmd_evaluate)
     return parser
 
