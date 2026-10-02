@@ -119,3 +119,7 @@ models/            poids du CNN entraîné
 docs/              images du README
 tests/
 ```
+
+## Licence
+
+MIT, voir [LICENSE](LICENSE).
