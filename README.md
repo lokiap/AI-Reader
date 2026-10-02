@@ -116,3 +116,7 @@ models/            trained CNN weights
 docs/              README images
 tests/
 ```
+
+## License
+
+MIT, see [LICENSE](LICENSE).
