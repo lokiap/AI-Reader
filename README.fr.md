@@ -7,7 +7,8 @@ caractères sur une page de texte. Deux approches sont construites et comparées
 vision par ordinateur classique (template matching) et un petit CNN entraîné uniquement à partir du catalogue de
 symboles. Réalisé avec OpenCV et PyTorch.
 
-![Luminaires détectés sur le plan](docs/plan_detections.jpg)
+![Luminaires détectés par template matching](docs/plan_detections.jpg)
+![Luminaires détectés par le CNN](docs/plan_cnn_detections.jpg)
 
 | Source | Image | Catalogue | Ce qu'on cherche |
 |---|---|---|---|
