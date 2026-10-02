@@ -6,7 +6,8 @@ Finding and recognising symbols in large technical images: light fixtures on a b
 page of text. Two approaches are built and compared on the same data: a classical computer-vision baseline
 (template matching) and a small CNN trained only from the symbol catalogue. Built with OpenCV and PyTorch.
 
-![Light fixtures detected on the plan](docs/plan_detections.jpg)
+![Light fixtures detected by template matching](docs/plan_detections.jpg)
+![Light fixtures detected by the CNN](docs/plan_cnn_detections.jpg)
 
 | Source | Image | Catalogue | What we look for |
 |---|---|---|---|
